@@ -1,0 +1,82 @@
+/* 
+===========================================
+            Mobile Site
+===========================================
+*/
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        width: 100vw - var(--mobile-padding);
+        padding: 1rem var(--mobile-padding);
+    }
+
+    #title {
+        width: 80%;
+        font-size: .75rem;
+    }
+
+    #hamburger-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #hamburger {   
+        margin: 0;
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        background-image: url('/img/hamburger.png');
+        background-size: cover;
+        transition: all .4s ease;
+    }
+
+    .hero-section {
+        padding-bottom: .8rem;
+    }
+
+    #hero-img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .caption {
+        width: 75vw;
+    }
+
+    .caption-src {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .slideshow-section {
+        display: none;
+    }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 4rem;
+    }
+
+    .content-box {
+        margin: 2rem;
+        width: 75vw;
+        
+    }
+
+    @keyframes menuEnter {
+        0% {transform: rotate(0deg)}
+        100% {transform: rotate(90deg)}
+    }
+
+    @keyframes menuExit {
+        0% {transform: rotate(90deg)}
+        100% {transform: rotate(0deg)}
+    }
+} 

@@ -9,6 +9,10 @@
 :root {
     --main-color: #192846;
     --accent-color: #D19D3B;
+
+    --padding: 3rem;
+
+    --mobile-padding: 1.3rem;
 }
 
 
@@ -29,6 +33,9 @@ html, body {
     flex-direction: column;
 }
 
+p {
+    margin: 0;
+}
 
 /* 
 ===========================================
@@ -38,8 +45,8 @@ html, body {
 
 header {
     display: flex;
-    width: 100vw - 1.2rem;
-    padding: 1.2rem;
+    width: 100vw - var(--padding);
+    padding: 1rem var(--padding);
     background: var(--main-color);
     color: var(--accent-color);
 }
@@ -94,28 +101,110 @@ nav > ul {
     display: none;
 }
 
-#hamburger {
-    margin: 0;
-    padding: 0;
-    width: 35px;
-    height: 35px;
-    background-image: url('/img/hamburger.png');
+/* 
+===========================================
+               Hero Section
+===========================================
+*/
+
+.hero-section {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-img {
+    width: 400px;
+    height: 400px;
+    background: url('/img/naacpimg.png') no-repeat;
     background-size: cover;
 }
 
-@media only screen and (max-width: 600px) {
-    nav {
-        display: none;
-    }
+#caption-box {
+    padding-top: 2.5rem;
+    color: var(--accent-color);
+}
 
-    #title {
-        width: 80%;
-        font-size: .75rem;
-    }
+.caption {
+    margin: 0;
+    width: 35vw;
+    text-align: center;
+    font-style: italic;
+    display: none;
+    animation: fading 8s;
+}
 
-    #hamburger-box {
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-} 
+.caption-src {
+    margin: 0;
+    margin-top: .7rem;
+    text-align: right;
+    display: none;
+    animation: fading 8s;
+}
+
+/* 
+===========================================
+            Slideshow Section
+===========================================
+*/
+
+.slideshow-section {
+    background: var(--main-color);
+    height: 60vh;
+}
+
+/* 
+===========================================
+            Content Section
+===========================================
+*/
+
+.content-section {
+    padding: 7rem 0;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-box {
+    width: 35vw;
+    border: 2px solid var(--accent-color);
+    padding: 1rem;
+}
+.content-header {
+    margin: 0;
+    text-align: center;
+}
+
+.content {
+    line-height: 1.8rem;
+}
+
+/* 
+===========================================
+                Footer
+===========================================
+*/
+
+footer {
+    background: var(--main-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* 
+===========================================
+                Footer
+===========================================
+*/
+
+@keyframes fading {
+    0% {opacity: 0}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}

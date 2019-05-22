@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
 /* 
@@ -28,7 +29,7 @@ html, body {
 }
 
 .wrapper {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat','PT Sans', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -59,6 +60,7 @@ header {
 
 #title > h1 {
     margin: 0;
+    font-weight: 500;
 }
 
 nav {
@@ -140,7 +142,8 @@ nav > ul {
 .caption-src {
     margin: 0;
     margin-top: .7rem;
-    text-align: right;
+    text-align: center;
+    font-weight: bold;
     display: none;
     animation: fading 8s;
 }

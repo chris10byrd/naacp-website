@@ -196,7 +196,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   .col1 {
     width: 100%;
     min-height: 20vh;

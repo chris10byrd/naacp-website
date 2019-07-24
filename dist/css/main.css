@@ -147,7 +147,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: nowrap; }
   main.solid {
     margin-top: 12vh; }
   main .col1 {

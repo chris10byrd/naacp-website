@@ -1,0 +1,23 @@
+.title {
+    width: 100%;
+    flex-grow: auto;
+    text-align: center;
+    color: color(primary);
+    font-size: 36px;    
+}
+
+.event-box {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid color(text2);
+    margin: 10px;
+    
+    h1 {
+        font-size: 36px;
+        color: color(primary);
+    }
+
+    img {
+        width: 98%;
+    }
+}

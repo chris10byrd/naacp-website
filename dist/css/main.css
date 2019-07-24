@@ -19,7 +19,7 @@ body {
   background-size: cover; }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -75,11 +75,26 @@ header {
       header .hamburger .line:last-child {
         margin: 0; }
 
+.solid-header {
+  position: fixed;
+  display: block; }
+  .solid-header .solid-title {
+    margin-top: 6vh;
+    font-size: 80px;
+    color: white;
+    font-weight: 600; }
+  .solid-header .solid-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+    .solid-header .solid-wrapper nav {
+      margin-left: auto; }
+
 .menu {
   background: #c88d19;
-  position: absolute;
+  position: fixed;
   height: 100vh;
-  width: 35vw;
+  width: 30vw;
   z-index: 4;
   right: 0;
   top: 0;
@@ -113,7 +128,7 @@ header {
           text-decoration: underline; }
 
 .show {
-  position: absolute;
+  position: fixed;
   display: flex;
   z-index: 4; }
 
@@ -127,10 +142,13 @@ header {
 main {
   padding: 1rem 10vw;
   padding-top: .2vh;
+  padding-bottom: 9vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: wrap; }
+  main.solid {
+    margin-top: 12vh; }
   main .col1 {
     width: 100%;
     min-height: 20vh;
@@ -139,14 +157,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 3.5vh; }
     main .col1 .brand-text {
       font-family: "Crimson Text", serif;
       font-size: 28px;
-      font-weight: 100;
-      color: #c88d19; }
+      font-weight: 600;
+      color: #fff;
+      border: 4px solid #fff;
+      margin-bottom: 4vh; }
     main .col1 .btn {
-      margin-top: 1vh;
       display: inline-block;
       border-radius: 10px;
       background-color: #315799;
@@ -178,7 +198,6 @@ main {
       main .col1 .btn:focus {
         outline: none; }
   main .col2 {
-    margin-top: 5vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -221,6 +240,10 @@ main {
         opacity: 1;
         text-decoration: underline; }
 
+.even-col {
+  width: 100%;
+  height: auto; }
+
 footer {
   margin-top: auto;
   padding: .5rem;
@@ -230,6 +253,24 @@ footer {
   text-align: center;
   width: 90%; }
 
+.title {
+  width: 100%;
+  flex-grow: auto;
+  text-align: center;
+  color: #11274c;
+  font-size: 36px; }
+
+.event-box {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #292929;
+  margin: 10px; }
+  .event-box h1 {
+    font-size: 36px;
+    color: #11274c; }
+  .event-box img {
+    width: 98%; }
+
 #contact-header {
   height: 50vh;
   position: relative;
@@ -237,7 +278,8 @@ footer {
   z-index: 0; }
   #contact-header #contact-title {
     margin-top: 6vh;
-    font-size: 80px;
+    font-size: 50px;
+    text-align: center;
     color: white;
     font-weight: 600; }
   #contact-header #contact-wrapper {
@@ -248,43 +290,50 @@ footer {
       margin-left: auto; }
 
 #contact-main {
-  position: fixed;
+  position: absolute;
   z-index: 0;
   background: white;
   width: 70vw;
-  height: 63vh;
-  top: 25vh;
+  top: 30vh;
   display: flex;
+  flex-direction: column;
+  align-self: center;
   align-items: center;
   justify-content: center;
   box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.16);
-  padding: 0; }
+  padding: 0;
+  margin: auto; }
   #contact-main form {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 90%;
     height: 100%;
-    padding: 2.5rem;
+    padding: .5rem;
     border-radius: 15px; }
     #contact-main form h2 {
-      font-size: 36px;
+      margin-top: 5px;
+      font-size: 28px;
       font-weight: 700;
-      color: #292929; }
+      color: #292929;
+      text-align: center; }
     #contact-main form h4 {
       font-size: 18px;
       color: rgba(0, 0, 0, 0.5);
       font-weight: 540; }
     #contact-main form #input-container {
-      margin-top: 40px;
+      margin-top: 10px;
       display: flex;
+      flex-direction: column;
       justify-content: space-between; }
       #contact-main form #input-container .input-item {
-        width: 42%; }
+        width: 100%;
+        text-align: center;
+        margin-top: 10px; }
         #contact-main form #input-container .input-item input {
           width: 100%;
           border: none;
           border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-          margin-top: 10px;
+          margin-top: 5px;
           font-size: 20px; }
           #contact-main form #input-container .input-item input:focus {
             outline: none;
@@ -293,13 +342,18 @@ footer {
       margin: 30px 0 10px 0; }
     #contact-main form textarea {
       border: 2px solid rgba(0, 0, 0, 0.2);
+      padding: .2rem;
       font-size: 20px;
+      height: 20vh;
       resize: none; }
       #contact-main form textarea:focus {
         outline: none;
         border-color: #315799; }
     #contact-main form button {
-      margin-top: auto;
+      justify-self: center;
+      align-self: center;
+      margin-top: 2vh;
+      margin-bottom: 1vh;
       display: inline-block;
       border-radius: 10px;
       background-color: #315799;
@@ -312,8 +366,7 @@ footer {
       transition: all 0.5s;
       cursor: pointer; }
   #contact-main #contact-info {
-    margin-left: auto;
-    width: 40%;
+    width: 100%;
     height: 100%;
     background: #315799;
     padding: 40px;
@@ -322,18 +375,22 @@ footer {
       font-size: 36px;
       font-weight: 600; }
     #contact-main #contact-info .info-item {
-      margin-top: 25%;
+      margin-top: 20%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       width: 100%; }
       #contact-main #contact-info .info-item p {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 100;
-        margin-left: 1rem; }
+        text-align: center; }
+
+.contact-footer {
+  margin-top: 210vh; }
 
 @media screen and (min-width: 769px) {
   .hero-img {
-    height: 55vh;
+    height: 52vh;
     background-position-y: -200px; }
   .hamburger {
     display: inherit;
@@ -372,16 +429,23 @@ footer {
       font-size: 20px; }
   main {
     padding: 1rem 15vw;
-    padding-top: 5vh;
+    padding-top: 12vh;
     display: flex;
     flex-direction: row; }
+    main.solid {
+      margin-top: 4vh; }
     main .col1 {
+      margin: 0;
       padding: auto 0;
       width: 24vw;
       text-align: left;
       justify-content: left; }
       main .col1 .brand-text {
-        font-size: 56px; }
+        font-size: 56px;
+        border: none;
+        color: #c88d19;
+        font-weight: 100;
+        margin: 0; }
       main .col1 .btn {
         margin-top: 3vh;
         margin-right: auto; }
@@ -399,8 +463,55 @@ footer {
         main .col2 ul li .event-name {
           font-size: 24px; }
       main .col2 .event-link {
-        text-align: left; } }
+        text-align: left; }
+  .even-col {
+    width: 50%; }
+  #contact-header #contact-title {
+    font-size: 80px;
+    text-align: left; }
+  #contact-main {
+    height: 63vh;
+    flex-direction: row; }
+    #contact-main form {
+      padding: 2.5rem;
+      width: 60%; }
+      #contact-main form h2 {
+        margin: 0;
+        font-size: 36px;
+        text-align: left; }
+      #contact-main form #input-container {
+        margin-top: 40px;
+        flex-direction: row; }
+        #contact-main form #input-container .input-item {
+          width: 42%;
+          text-align: left;
+          margin: 0; }
+      #contact-main form textarea {
+        height: 35%; }
+      #contact-main form button {
+        margin-top: auto;
+        margin-bottom: 0;
+        align-self: left;
+        justify-self: left; }
+    #contact-main #contact-info {
+      margin-left: auto;
+      width: 40%; }
+      #contact-main #contact-info .info-item {
+        flex-direction: row; }
+        #contact-main #contact-info .info-item p {
+          font-size: 20px;
+          text-align: left;
+          margin-left: 1rem; }
+  .contact-footer {
+    position: absolute;
+    bottom: 0; } }
 
 @media screen and (max-width: 768px) {
   .brand-text {
-    font-size: 56px; } }
+    font-size: 56px;
+    color: #fff; } }
+
+@media only screen and (max-width: 500px) {
+  .brand-text {
+    font-size: 56px;
+    color: #fff; } }

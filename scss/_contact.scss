@@ -7,7 +7,8 @@
     
     #contact-title {
         margin-top: 6vh;
-        font-size: 80px;
+        font-size: 50px;
+        text-align: center;
         color: white;
         font-weight: 600;
     }
@@ -23,29 +24,34 @@
 }
 
 #contact-main {
-    position: fixed;
+    position: absolute;
     z-index: 0;
     background: white;
     width: 100vw - 2*$padding;
-    height: 63vh;
-    top: 25vh;
+    //height: 63vh;
+    top: 30vh;
     display: flex;
+    flex-direction: column;
+    align-self: center;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 5px 50px rgba(0, 0, 0, 0.16);
     padding: 0;
+    margin: auto;
     form {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 90%;
         height: 100%;
-        padding: 2.5rem;
+        padding: .5rem;
         border-radius: 15px;
         
         h2 {
-            font-size: 36px;
+            margin-top: 5px;
+            font-size: 28px;
             font-weight: 700;
             color: color(text2);
+            text-align: center;
         }
 
         h4 {
@@ -55,17 +61,20 @@
         }
 
         #input-container {
-            margin-top: 40px;
+            margin-top: 10px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             .input-item {
-                width: 42%;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
                 input {
                     
                     width: 100%;
                     border: none;
                     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-                    margin-top: 10px;
+                    margin-top: 5px;
                     font-size: 20px;
                     &:focus {
                         outline: none;
@@ -82,7 +91,9 @@
 
         textarea {
             border: 2px solid rgba(0, 0, 0, 0.2);
+            padding: .2rem;
             font-size: 20px;
+            height: 20vh;
             resize: none;
             &:focus {
                 outline: none;
@@ -91,7 +102,10 @@
         }
 
         button {
-            margin-top: auto;
+            justify-self: center;
+            align-self: center;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
             display: inline-block;
             border-radius: 10px;
             background-color: color(btn1);
@@ -107,8 +121,8 @@
     }
 
     #contact-info {
-        margin-left: auto;
-        width: 40%;
+        //margin-left: auto;
+        width: 100%;
         height: 100%;
         background: color(btn1);
         padding: 40px;
@@ -120,16 +134,22 @@
         }
 
         .info-item {
-            margin-top: 25%;
+            margin-top: 20%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             width: 100%;
 
             p {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 100;
-                margin-left: 1rem;
+                text-align: center;
             }
         }
     }
+}
+
+
+.contact-footer {
+    margin-top: 210vh;
 }

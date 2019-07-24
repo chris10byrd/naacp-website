@@ -1,0 +1,32 @@
+$colors: (
+  primary: #11274c,
+  accent: #c88d19,
+  text1: #686868,
+  text2: #292929,
+  btn1: #315799,
+  btnTxt: #ffffff
+);
+
+$padding: 15vw;
+
+@function color($colorName) {
+  @return map-get($map: $colors, $key: $colorName);
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media only screen and (max-width:500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width:768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px){
+    @content;
+  }
+}

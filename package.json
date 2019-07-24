@@ -1,0 +1,22 @@
+{
+  "name": "naacp",
+  "version": "1.0.0",
+  "description": "Website for the UGA Chapter of the NAACP",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris10byrd/naacp-website.git"
+  },
+  "author": "Christian Byrd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris10byrd/naacp-website/issues"
+  },
+  "homepage": "https://github.com/chris10byrd/naacp-website#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

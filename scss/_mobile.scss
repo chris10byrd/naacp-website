@@ -196,16 +196,8 @@
 }
 //Tablets
 @include mediaMd {
-    .brand-text {
-        font-size: 56px;
-        color: #fff;
-    }
 }
 
 //Smartphones
 @include mediaSm {
-    .brand-text {
-        font-size: 56px;
-        color: #fff;
-    }
 }

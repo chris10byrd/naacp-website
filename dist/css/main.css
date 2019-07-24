@@ -390,7 +390,7 @@ footer {
 .contact-footer {
   margin-top: 210vh; }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
   .hero-img {
     height: 52vh;
     background-position-y: -200px; }

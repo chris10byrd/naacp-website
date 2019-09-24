@@ -71,20 +71,21 @@
     main {
         padding: 1rem $padding;
         padding-top: 8vh;
-        padding-bottom: 0;
+        padding-bottom: 5vh;
         display: flex;
         flex-direction: row;
 
         &.solid {
             width: 100vw;
-            padding: 0;
+            padding: 0 $padding;
             margin-top: 10vh;
             justify-content: space-evenly;
         }
         .col1 {
-            padding: 1rem 0;
+            padding: 0;
             text-align: left;
             justify-content: left;
+            width: 38vw;
             .brand-text {
                 font-size: 56px;
                 border: none;
@@ -100,6 +101,7 @@
 
         .col2 {
             width: 20vw;
+            margin-left: 13vh;
             .events-title {
                 font-size: 32px;
             }

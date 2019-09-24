@@ -274,8 +274,43 @@ footer {
     width: 98%; }
 
 .about {
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center; }
+  .about h1 {
+    width: 100%;
+    text-align: center; }
+  .about .eboard-profile {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 30vw;
+    margin: 1rem 2rem;
+    color: #ffffff;
+    background-color: #315799;
+    border-radius: 10px; }
+    .about .eboard-profile .headshot {
+      width: 135px;
+      height: 135px;
+      border-radius: 50%;
+      background-size: cover;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .about .eboard-profile .eboard-description {
+      margin: auto 0;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column; }
+      .about .eboard-profile .eboard-description h2 {
+        font-size: 28px;
+        font-weight: 400;
+        border-bottom: 2px solid white;
+        margin-bottom: 5px;
+        width: 100%; }
+      .about .eboard-profile .eboard-description h3 {
+        font-size: 20px;
+        font-weight: 250; }
+      .about .eboard-profile .eboard-description h4 {
+        font-weight: 100; }
 
 #contact-header {
   height: 50vh;
@@ -437,18 +472,19 @@ footer {
   main {
     padding: 1rem 15vw;
     padding-top: 8vh;
-    padding-bottom: 0;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: row; }
     main.solid {
       width: 100vw;
-      padding: 0;
+      padding: 0 15vw;
       margin-top: 10vh;
       justify-content: space-evenly; }
     main .col1 {
-      padding: 1rem 0;
+      padding: 0;
       text-align: left;
-      justify-content: left; }
+      justify-content: left;
+      width: 38vw; }
       main .col1 .brand-text {
         font-size: 56px;
         border: none;
@@ -459,7 +495,8 @@ footer {
         margin-top: 3vh;
         margin-right: auto; }
     main .col2 {
-      width: 20vw; }
+      width: 20vw;
+      margin-left: 13vh; }
       main .col2 .events-title {
         font-size: 32px; }
       main .col2 ul li {

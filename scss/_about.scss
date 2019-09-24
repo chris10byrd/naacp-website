@@ -1,6 +1,57 @@
 .about {
 
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .eboard-profile {
+
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        width: 30vw;
+        margin: 1rem 2rem;
+        color: color(btnTxt);
+        background-color: color(btn1);
+        border-radius: 10px; 
+        .headshot {
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            background-size: cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .eboard-description {
+            margin: auto 0;
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+
+                font-size: 28px;
+                font-weight: 400;
+                border-bottom: 2px solid white;
+                margin-bottom: 5px;
+                width: 100%;
+
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 250;
+            }
+            h4 {
+
+                font-weight: 100;
+
+            }
+        }
+
+    }
 
 }

@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none; }
 
 body {
   font-family: proxima-nova, sans-serif;
@@ -17,7 +18,8 @@ body {
   height: 40vh;
   background: url("../img/hero-img.jpg");
   background-repeat: no-repeat;
-  background-position-y: -200px;
+  background-position-x: -50px;
+  background-position-y: 50px;
   background-size: cover; }
 
 header {
@@ -144,7 +146,7 @@ header {
 main {
   padding: 1rem 10vw;
   padding-top: .2vh;
-  padding-bottom: 9vh;
+  padding-bottom: 5vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -250,6 +252,7 @@ footer {
   margin-top: auto;
   padding: .5rem;
   justify-self: flex-end;
+  align-self: center;
   border-top: #c88d19 solid 1px;
   color: #c88d19;
   text-align: center;
@@ -266,51 +269,79 @@ footer {
   padding: 1rem;
   text-align: center;
   border: 1px solid #292929;
-  width: 35vw; }
+  width: 100%;
+  margin: 0;
+  margin: 2vh 0; }
   .event-box h1 {
     font-size: 36px;
     color: #292929; }
   .event-box img {
     width: 98%; }
 
+.about-header {
+  width: 100vw; }
+
 .about {
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center; }
-  .about h1 {
-    width: 100%;
-    text-align: center; }
+  align-items: center;
+  justify-content: center; }
+  .about .box {
+    padding: 1rem;
+    border: 2px dotted black;
+    margin-bottom: 1rem; }
+    .about .box h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #c88d19; }
+    .about .box h3 {
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      color: #c88d19;
+      opacity: .6; }
+  .about .page-break {
+    margin: 1vh 0 2vh 0;
+    width: 50vw; }
   .about .eboard-profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 1rem;
-    width: 30vw;
-    margin: 1rem 2rem;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
     color: #ffffff;
     background-color: #315799;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif; }
     .about .eboard-profile .headshot {
-      width: 135px;
-      height: 135px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       background-size: cover;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .about .eboard-profile .eboard-description {
-      margin: auto 0;
-      padding-left: 1rem;
+      margin-top: 1rem;
+      text-align: center;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 80%; }
       .about .eboard-profile .eboard-description h2 {
+        text-align: center;
         font-size: 28px;
-        font-weight: 400;
-        border-bottom: 2px solid white;
-        margin-bottom: 5px;
-        width: 100%; }
+        font-weight: 600;
+        width: 100%;
+        border-bottom: 1px dotted white; }
       .about .eboard-profile .eboard-description h3 {
-        font-size: 20px;
-        font-weight: 250; }
+        font-size: 24px;
+        font-weight: 300; }
       .about .eboard-profile .eboard-description h4 {
-        font-weight: 100; }
+        font-weight: 100;
+        opacity: .6; }
+      .about .eboard-profile .eboard-description p {
+        opacity: .6; }
 
 #contact-header {
   height: 50vh;
@@ -428,7 +459,7 @@ footer {
         text-align: center; }
 
 .contact-footer {
-  margin-top: 210vh; }
+  margin-top: 180vh; }
 
 @media screen and (min-width: 1280px) {
   .hero-img {

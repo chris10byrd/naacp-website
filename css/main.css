@@ -162,7 +162,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 3.5vh; }
+    padding-bottom: 10vh; }
     main .col1 .brand-text {
       font-family: "Crimson Text", serif;
       font-size: 28px;
@@ -202,6 +202,7 @@ main {
       main .col1 .btn:focus {
         outline: none; }
   main .col2 {
+    margin-top: 2vh;
     width: 100%;
     display: flex;
     flex-direction: column;

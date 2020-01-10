@@ -5,6 +5,12 @@
         background-position-y: -75px;
     }
     
+    .wrapper {
+
+        margin-top: 45vh;
+
+    }
+
     .hamburger {
         display: inherit;
         margin-left: 1.5rem;
@@ -78,7 +84,7 @@
         &.solid {
             width: 100vw;
             padding: 0 $padding;
-            margin-top: 10vh;
+            margin-top: 20vh;
             justify-content: space-evenly;
         }
         .col1 {
@@ -122,6 +128,12 @@
             .event-link {
                 text-align: left;
             }
+        }
+        .event-name {
+            text-align: left;
+        }
+        .event-description {
+            text-align: center;
         }
     }
 
@@ -192,6 +204,68 @@
     .contact-footer {
         position: absolute;
         bottom: 0;
+    }
+
+    .about {
+        .box-container {
+            display: flex;
+            .box {
+                margin-right: 3vw;
+            }
+        }
+
+        .page-break {
+            display: none;
+        }
+
+        .line-break {
+            width: 75%;
+            border-bottom: 1px solid color(accent);
+            margin: 5vh 0;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin-top: 3vh;
+            margin-bottom: 5vh;
+        }
+
+        .eboard-profile {
+            width: 28vw;
+            margin-bottom: 5vh;
+        }
+    }
+
+    .event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title {    
+            text-align: center;
+            margin-top: -2vh;
+            margin-bottom: 2vh;
+        }
+        .titles {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .event-box {
+            margin-bottom: 4vh;
+        }
+        .two-col {
+            display: flex;
+            width: 85%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .scroll-box {
+            width: 25vw;
+            height: 70vh;
+            overflow: scroll;
+        }
     }
 }
 //Tablets

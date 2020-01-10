@@ -14,8 +14,8 @@ body {
   overflow-x: hidden; }
 
 .hero-img {
-  width: 100%;
-  height: 40vh;
+  width: 110vw;
+  height: 45vh;
   background: url("../img/hero-img.jpg");
   background-repeat: no-repeat;
   background-position-x: -50px;
@@ -180,8 +180,9 @@ main {
       color: #ffffff;
       text-align: center;
       font-size: 14px;
+      margin-top: 2vh;
       width: 225px;
-      height: 60px;
+      height: 8vh;
       transition: all 0.5s;
       cursor: pointer; }
       main .col1 .btn span {
@@ -217,10 +218,10 @@ main {
       list-style: none; }
       main .col2 ul li {
         display: flex;
+        text-align: center;
         align-items: center;
         padding: 1rem 0;
-        flex-direction: column;
-        text-align: center; }
+        flex-direction: column; }
         main .col2 ul li .date {
           padding: 2px;
           border: 1px solid #686868;
@@ -229,9 +230,11 @@ main {
         main .col2 ul li .event {
           margin-left: 0.75rem; }
           main .col2 ul li .event .event-name {
-            font-size: 20px;
+            width: 100%;
+            font-size: 16px;
             color: #686868; }
           main .col2 ul li .event .event-subtext {
+            width: 100%;
             font-size: 14px;
             color: #686868; }
         main .col2 ul li::last-child {
@@ -290,7 +293,6 @@ footer {
   justify-content: center; }
   .about .box {
     padding: 1rem;
-    border: 2px dotted black;
     margin-bottom: 1rem; }
     .about .box h1 {
       width: 100%;
@@ -335,7 +337,7 @@ footer {
         font-size: 28px;
         font-weight: 600;
         width: 100%;
-        border-bottom: 1px dotted white; }
+        border-bottom: 1px solid white; }
       .about .eboard-profile .eboard-description h3 {
         font-size: 24px;
         font-weight: 300; }
@@ -467,6 +469,8 @@ footer {
   .hero-img {
     height: 50vh;
     background-position-y: -75px; }
+  .wrapper {
+    margin-top: 45vh; }
   .hamburger {
     display: inherit;
     margin-left: 1.5rem;
@@ -511,7 +515,7 @@ footer {
     main.solid {
       width: 100vw;
       padding: 0 15vw;
-      margin-top: 10vh;
+      margin-top: 20vh;
       justify-content: space-evenly; }
     main .col1 {
       padding: 0;
@@ -541,6 +545,10 @@ footer {
           font-size: 24px; }
       main .col2 .event-link {
         text-align: left; }
+    main .event-name {
+      text-align: left; }
+    main .event-description {
+      text-align: center; }
   .even-col {
     width: 50%; }
   #contact-header #contact-title {
@@ -581,4 +589,46 @@ footer {
           margin-left: 1rem; }
   .contact-footer {
     position: absolute;
-    bottom: 0; } }
+    bottom: 0; }
+  .about .box-container {
+    display: flex; }
+    .about .box-container .box {
+      margin-right: 3vw; }
+  .about .page-break {
+    display: none; }
+  .about .line-break {
+    width: 75%;
+    border-bottom: 1px solid #c88d19;
+    margin: 5vh 0; }
+  .about h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 5vh; }
+  .about .eboard-profile {
+    width: 28vw;
+    margin-bottom: 5vh; }
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .event .title {
+      text-align: center;
+      margin-top: -2vh;
+      margin-bottom: 2vh; }
+    .event .titles {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+    .event .event-box {
+      margin-bottom: 4vh; }
+    .event .two-col {
+      display: flex;
+      width: 85%;
+      flex-direction: row;
+      justify-content: space-between; }
+    .event .scroll-box {
+      width: 25vw;
+      height: 70vh;
+      overflow: scroll; } }

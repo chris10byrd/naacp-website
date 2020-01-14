@@ -6,12 +6,21 @@
     font-size: 36px;    
 }
 
+.hidden-title {
+    display: none;
+}
+
+.hidden-box {
+    display: none;
+}
+
 .event-box {
     padding: 1rem;
     text-align: center;
     border: 1px solid color(text2);
     width: 100%;
     margin: 0;
+
     h1 {
         font-size: 36px;
         color: color(text2);

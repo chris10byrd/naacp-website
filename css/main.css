@@ -270,6 +270,12 @@ footer {
   color: #292929;
   font-size: 36px; }
 
+.hidden-title {
+  display: none; }
+
+.hidden-box {
+  display: none; }
+
 .event-box {
   padding: 1rem;
   text-align: center;
@@ -549,6 +555,10 @@ footer {
       text-align: left; }
     main .event-description {
       text-align: center; }
+    main .hidden-title {
+      display: inherit; }
+    main .hidden-box {
+      display: inherit; }
   .even-col {
     width: 50%; }
   #contact-header #contact-title {
